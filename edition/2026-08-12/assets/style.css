@@ -1,0 +1,248 @@
+
+:root{
+ --bg:#ffffff; --fg:#16161a; --muted:#6b6b72; --rule:#e2e2e5; --rule-fort:#16161a;
+ --accent:#a51c14; --link:#a51c14; --card:#ffffff; --ombre:rgba(0,0,0,.06);
+ --measure:52rem; --wide:76rem;
+ --font:Georgia,"Iowan Old Style","Charter","Times New Roman",serif;
+ --titre:var(--font);
+ --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+ --scale:1;
+}
+html[data-theme="dark"]{--bg:#111114;--fg:#ececed;--muted:#9a9aa2;--rule:#2c2c31;
+ --rule-fort:#ececed;--accent:#ff7a6b;--link:#ff8f80;--card:#17171b;
+ --ombre:rgba(0,0,0,.5);}
+html[data-font="sans"]{--font:var(--ui);--titre:var(--ui);--measure:48rem;--wide:72rem;}
+html[data-font="dys"]{--font:"OpenDyslexic",Georgia,"Comic Sans MS",Verdana,serif;
+ --titre:var(--font);--measure:46rem;--wide:70rem;}
+*{box-sizing:border-box}
+html{font-size:calc(112% * var(--scale));scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);
+ line-height:1.65;text-align:left;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--measure);margin:0 auto;padding:0 1.25rem 6rem}
+.wrap.large{max-width:var(--wide)}
+a{color:var(--link)}
+img{max-width:100%}
+
+/* ------------------------------------------------------ barres de navigation */
+.toolbar{position:sticky;top:0;z-index:30;background:var(--bg);
+ border-bottom:1px solid var(--rule);padding:.45rem 0;display:flex;gap:.35rem;
+ flex-wrap:wrap;align-items:center;font-family:var(--ui);font-size:.74rem}
+.toolbar button{font-family:inherit;font-size:.74rem;background:transparent;
+ color:var(--muted);border:0;border-radius:.2rem;padding:.3rem .5rem;cursor:pointer;
+ letter-spacing:.01em}
+.toolbar button:hover{color:var(--accent);background:var(--rule)}
+.toolbar .sp{flex:1}
+.toolbar a{font-family:var(--ui);text-decoration:none;font-weight:600}
+nav.cahiers{position:sticky;top:2.35rem;z-index:29;background:var(--bg);
+ border-bottom:2px solid var(--rule-fort);padding:0;display:flex;
+ gap:1.4rem;flex-wrap:wrap;font-family:var(--ui);font-size:.8rem;font-weight:700;
+ letter-spacing:.03em;text-transform:uppercase}
+nav.cahiers a{text-decoration:none;padding:.6rem 0;color:var(--fg);
+ border-bottom:3px solid transparent;margin-bottom:-2px}
+nav.cahiers a:hover{color:var(--accent)}
+nav.cahiers a.on{color:var(--accent);border-bottom-color:var(--accent)}
+nav.cahiers .n{color:var(--muted);font-weight:400}
+
+/* ---------------------------------------------------------------- en-tête */
+header.top{padding:1.6rem 0 1.1rem;margin:0 0 1.6rem;border-bottom:1px solid var(--rule)}
+.dateline{font-family:var(--ui);color:var(--accent);font-size:.72rem;
+ letter-spacing:.13em;text-transform:uppercase;font-weight:700}
+h1{font-family:var(--titre);font-size:3rem;line-height:1.05;margin:.35rem 0 .7rem;
+ letter-spacing:-.022em;font-weight:700}
+.chapeau{max-width:46rem;color:var(--muted)}
+.chapeau p{line-height:1.7;margin:.6rem 0;font-size:.95rem}
+
+/* ------------------------------------------------------------- la manchette */
+.manchette{margin:0 0 2.2rem;border-bottom:2px solid var(--rule-fort);
+ padding-bottom:1.8rem}
+.manchette .etiq{font-family:var(--ui);font-size:.68rem;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--accent);font-weight:800}
+.manchette figure{margin:.8rem 0 1rem}
+.manchette img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;
+ display:block;background:var(--rule)}
+.manchette h2{font-family:var(--titre);font-size:2.6rem;line-height:1.08;
+ margin:.4rem 0 .5rem;letter-spacing:-.02em;font-weight:700;max-width:34ch}
+.manchette h2 a{text-decoration:none;color:inherit}
+.manchette h2 a:hover{color:var(--accent)}
+.manchette .extrait{font-size:1.12rem;line-height:1.62;max-width:44rem;
+ color:var(--fg)}
+.secondaires{display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+ margin:1.8rem 0 0;border-top:1px solid var(--rule);padding-top:1.2rem}
+.secondaires article.carte{border:0;padding:0 1.3rem;border-left:1px solid var(--rule)}
+.secondaires article.carte:first-child{border-left:0;padding-left:0}
+@media (max-width:56rem){.secondaires{grid-template-columns:1fr}
+ .secondaires article.carte{border-left:0;padding:1rem 0;
+  border-top:1px solid var(--rule)}
+ .secondaires article.carte:first-child{border-top:0;padding-top:0}
+ .manchette h2{font-size:1.9rem}}
+
+/* ----------------------------------------------------------------- cahiers */
+h2.cahier{font-family:var(--ui);font-size:.86rem;font-weight:800;
+ letter-spacing:.14em;text-transform:uppercase;margin:3rem 0 0;padding-bottom:.5rem;
+ border-bottom:2px solid var(--rule-fort);color:var(--fg);
+ display:flex;align-items:baseline;gap:.6rem}
+h2.cahier a{text-decoration:none;color:inherit}
+h2.cahier a:hover{color:var(--accent)}
+h2.cahier .cnt{font-size:.72rem;color:var(--muted);font-weight:400;letter-spacing:.04em}
+h3.rubrique{font-family:var(--ui);font-size:.74rem;margin:1.8rem 0 .2rem;
+ color:var(--accent);text-transform:uppercase;letter-spacing:.13em;font-weight:800}
+h3.rubrique .cnt{color:var(--muted);font-weight:400}
+
+/* ------------------------------------------------------------------ cartes */
+.grille{display:grid;grid-template-columns:repeat(2,1fr);gap:0 2.2rem}
+@media (max-width:62rem){.grille{grid-template-columns:1fr;gap:0}}
+html[data-cols="1"] .grille{grid-template-columns:1fr;gap:0}
+html[data-cols="1"] .secondaires{grid-template-columns:1fr}
+html[data-cols="1"] .wrap.large{max-width:var(--measure)}
+article.carte{background:transparent;border:0;border-top:1px solid var(--rule);
+ border-radius:0;padding:1.1rem 0;margin:0;box-shadow:none;
+ display:flex;flex-direction:column}
+article.carte.vign{display:grid;grid-template-columns:1fr 6.5rem;gap:1rem;
+ align-items:start}
+article.carte.vign>div{grid-column:1;grid-row:1}
+article.carte.vign>a{grid-column:2;grid-row:1}
+@media (max-width:34rem){article.carte.vign{grid-template-columns:1fr 5rem}}
+.carte .vi{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:0;
+ display:block;background:var(--rule)}
+.terr{font-family:var(--ui);font-size:.66rem;letter-spacing:.12em;
+ text-transform:uppercase;color:var(--accent);font-weight:700}
+h4.titre{font-family:var(--titre);font-size:1.22rem;line-height:1.25;
+ margin:.2rem 0 .3rem;letter-spacing:-.012em;font-weight:700}
+h4.titre a{text-decoration:none;color:inherit}
+h4.titre a:hover{color:var(--accent)}
+.credit{font-family:var(--ui);font-size:.7rem;color:var(--muted);
+ margin-bottom:.45rem;letter-spacing:.02em}
+.extrait{margin:.3rem 0 .6rem;line-height:1.6;font-size:.92rem;color:var(--muted)}
+.plus{font-family:var(--ui);font-size:.72rem;margin-top:auto;font-weight:600}
+.plus a{text-decoration:none}
+.plus a:hover{text-decoration:underline}
+
+/* ------------------------------------------- aperçu autonome : un seul fichier */
+nav.sommaire{margin:1.4rem 0 0;border-top:1px solid var(--rule);padding-top:.2rem}
+nav.sommaire ol{margin:.4rem 0 0;padding:0 0 0 1.6rem;columns:2;column-gap:2.2rem}
+@media (max-width:52rem){nav.sommaire ol{columns:1}}
+nav.sommaire li{margin:0 0 .6rem;break-inside:avoid;line-height:1.35}
+nav.sommaire a{text-decoration:none;color:var(--fg);font-weight:700;font-size:.98rem}
+nav.sommaire a:hover{color:var(--accent)}
+nav.sommaire .src{display:block;font-family:var(--ui);font-size:.7rem;
+ color:var(--muted);font-weight:400;margin-top:.15rem}
+article.deplie{border-top:1px solid var(--rule);padding:1.8rem 0 .6rem;
+ scroll-margin-top:5rem}
+article.deplie:first-of-type{border-top:0}
+h2.dtitre{font-family:var(--titre);font-size:1.9rem;line-height:1.14;
+ margin:.25rem 0 .5rem;letter-spacing:-.018em;font-weight:700;max-width:32ch}
+article.deplie .chapo{margin-bottom:0}
+article.deplie figure{max-width:38rem}
+@media (max-width:34rem){h2.dtitre{font-size:1.45rem}}
+
+/* ------------------------------------------------------------------ filtre */
+.filtre{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;
+ margin:1.6rem 0 .4rem;font-family:var(--ui);font-size:.78rem}
+.filtre input,.filtre select{font-family:var(--ui);font-size:.8rem;
+ background:var(--card);color:var(--fg);border:1px solid var(--rule);
+ border-radius:0;padding:.5rem .6rem}
+.filtre input:focus,.filtre select:focus{outline:2px solid var(--accent);
+ outline-offset:-2px}
+.filtre input{flex:1;min-width:12rem}
+.filtre .res{color:var(--muted)}
+.vide{color:var(--muted);font-style:italic;margin:1rem 0}
+
+/* ------------------------------------------------------------------ index */
+details.index{margin:1.2rem 0;border:0;border-top:1px solid var(--rule);
+ border-bottom:1px solid var(--rule);background:transparent;padding:.7rem 0}
+details.index summary{cursor:pointer;font-family:var(--ui);font-size:.72rem;
+ letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:700}
+details.index summary:hover{color:var(--accent)}
+details.index .liste{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.9rem}
+details.index .liste a{font-family:var(--ui);font-size:.75rem;text-decoration:none;
+ border:1px solid var(--rule);border-radius:0;padding:.25rem .6rem;color:var(--fg)}
+details.index .liste a:hover{border-color:var(--accent);color:var(--accent)}
+details.index .liste .n{color:var(--muted);font-size:.7rem}
+
+/* ------------------------------------------------------------ page de sujet */
+.fil{font-family:var(--ui);font-size:.72rem;color:var(--muted);margin:1.2rem 0 .4rem;
+ letter-spacing:.06em;text-transform:uppercase}
+.fil a{color:var(--muted);text-decoration:none}
+.fil a:hover{color:var(--accent)}
+.sujet h1{font-family:var(--titre);font-size:2.5rem;line-height:1.08;
+ margin:.4rem 0 .7rem;letter-spacing:-.02em;max-width:30ch}
+.chapo{font-family:var(--ui);font-size:.76rem;color:var(--muted);
+ margin-bottom:1.2rem;padding-bottom:1.1rem;border-bottom:1px solid var(--rule);
+ letter-spacing:.02em}
+figure{margin:1.4rem 0 .6rem}
+figure img{width:100%;height:auto;border-radius:0;display:block}
+figcaption{font-family:var(--ui);font-size:.72rem;color:var(--muted);
+ line-height:1.55;margin-top:.5rem;padding-left:.7rem;
+ border-left:3px solid var(--rule)}
+.resume{line-height:1.75;margin:1.4rem 0 1.8rem;font-size:1.1rem;max-width:38rem}
+.resume p{margin:0 0 1.15rem}
+.resume p:first-of-type{font-size:1.2rem;line-height:1.6}
+.etiquettes{display:flex;gap:.35rem;flex-wrap:wrap;margin:1.4rem 0}
+.etiquettes a{font-family:var(--ui);font-size:.72rem;text-decoration:none;
+ border:1px solid var(--rule);border-radius:0;padding:.25rem .7rem;color:var(--muted)}
+.etiquettes a:hover{border-color:var(--accent);color:var(--accent)}
+.sources{border-top:2px solid var(--rule-fort);padding-top:1rem;margin-top:1.8rem;
+ max-width:38rem}
+.sources h5{font-family:var(--ui);font-size:.72rem;text-transform:uppercase;
+ letter-spacing:.13em;color:var(--accent);margin:0 0 .6rem;font-weight:800}
+.sources ul{margin:0;padding-left:1.1rem}
+.sources li{margin:.35rem 0;line-height:1.55;font-size:.92rem}
+.voisins{display:flex;gap:1.5rem;justify-content:space-between;margin-top:2.4rem;
+ border-top:1px solid var(--rule);padding-top:1.2rem;font-size:.95rem}
+.voisins a{max-width:46%;text-decoration:none;color:var(--fg);font-weight:700;
+ line-height:1.3}
+.voisins a:hover{color:var(--accent)}
+.voisins .lbl{display:block;font-family:var(--ui);color:var(--muted);font-size:.68rem;
+ text-transform:uppercase;letter-spacing:.12em;margin-bottom:.3rem;font-weight:700}
+
+/* ------------------------------------------------------------------- pied */
+footer.pied{margin-top:4rem;border-top:2px solid var(--rule-fort);padding-top:1.4rem;
+ font-family:var(--ui);font-size:.8rem;color:var(--muted);line-height:1.65}
+footer.pied h5{font-size:.7rem;color:var(--accent);margin:1.4rem 0 .3rem;
+ text-transform:uppercase;letter-spacing:.13em;font-weight:800}
+footer.pied p{margin:.2rem 0;max-width:44rem}
+.retour{position:fixed;right:1rem;bottom:1rem;background:var(--fg);
+ border:0;border-radius:0;padding:.6rem 1rem;font-family:var(--ui);
+ font-size:.72rem;font-weight:700;text-decoration:none;color:var(--bg);z-index:40}
+.retour:hover{background:var(--accent);color:#fff}
+@media (max-width:34rem){h1{font-size:2rem}.manchette h2{font-size:1.65rem}
+ .sujet h1{font-size:1.75rem}h4.titre{font-size:1.08rem}
+ .resume{font-size:1.02rem}.resume p:first-of-type{font-size:1.08rem}}
+
+/* ------------------------------------------------ le coup d'oeil (10 août) */
+[data-cahier="quebec"]{--ca:#9c3b28}[data-cahier="montreal"]{--ca:#1f668f}
+[data-cahier="canada"]{--ca:#8a621b}[data-cahier="international"]{--ca:#2e6b4f}
+[data-cahier="savoirs"]{--ca:#5d4a8f}
+html[data-theme="dark"] [data-cahier="quebec"]{--ca:#e08a72}
+html[data-theme="dark"] [data-cahier="montreal"]{--ca:#7db8dc}
+html[data-theme="dark"] [data-cahier="canada"]{--ca:#d9b36a}
+html[data-theme="dark"] [data-cahier="international"]{--ca:#84c4a4}
+html[data-theme="dark"] [data-cahier="savoirs"]{--ca:#b6a4e0}
+.masthead{text-align:center;border-bottom:4px double var(--fg);
+ padding:1.6rem 0 1rem;margin:.6rem 0 1.6rem}
+.masthead .sur{font-size:.78rem;letter-spacing:.35em;text-transform:uppercase;
+ color:var(--muted)}
+.masthead h1{font-size:3.1rem;line-height:1.05;margin:.25rem 0 .3rem;
+ letter-spacing:-.015em}
+.masthead .date{font-size:.9rem;color:var(--muted);letter-spacing:.06em;
+ text-transform:uppercase}
+.masthead .stats{display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;
+ margin-top:.9rem;font-size:.85rem;color:var(--muted)}
+.masthead .stats b{display:block;font-size:1.5rem;color:var(--fg);line-height:1.2}
+nav.cahiers a{border-left:4px solid var(--ca,var(--rule));border-radius:.35rem}
+h2.cahier{color:var(--ca,var(--accent));border-top-color:var(--ca,var(--accent))}
+article.carte{border-top:3px solid var(--ca,var(--rule));
+ transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+article.carte:hover{transform:translateY(-3px);box-shadow:0 6px 16px var(--ombre);
+ border-color:var(--ca,var(--accent))}
+.terr{color:var(--ca,var(--accent))}
+.manchette{position:relative}
+.manchette h2{font-size:2.5rem;line-height:1.15}
+.manchette .etiq{background:var(--accent);color:var(--bg);display:inline-block;
+ padding:.25rem .8rem;border-radius:.3rem;letter-spacing:.18em}
+.manchette img{aspect-ratio:21/9;object-fit:cover}
+.secondaires article.carte{border-top-width:3px}
+@media (max-width:34rem){.masthead h1{font-size:2.1rem}.manchette h2{font-size:1.7rem}}
+@media print{.toolbar,nav.cahiers,.retour,.filtre,details.index{display:none}
+ body{background:#fff;color:#000}article.carte{break-inside:avoid}
+ a{color:#000;text-decoration:none}}
