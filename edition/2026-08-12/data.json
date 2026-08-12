@@ -2,6 +2,7 @@
  "date": "2026-08-12",
  "volets": [
   "monde",
+  "quebec-canada",
   "report",
   "savoirs"
  ],
@@ -487,6 +488,22 @@
    "_slug": "extreme-droite-europeenne-le-rassemblement-de-milan-reste-la-ad381d"
   },
   {
+   "titre": "Ottawa, Fredericton et Moncton mettent 25 millions dans les égouts d'Elmwood Drive pour débloquer 1 300 logements",
+   "cahier": "canada",
+   "rubrique": "economie",
+   "territoire": "Nouveau-Brunswick",
+   "medias": "Logement, Infrastructures et Collectivités Canada",
+   "url": "https://www.canada.ca/fr/logement-infrastructures-collectivites/nouvelles/2026/08/le-canada-et-le-nouveau-brunswick-investissent-dans-les-egouts-sanitaires-et-pluviaux-pour-soutenir-la-construction-de-nouveaux-logements-a-moncton.html",
+   "resume": "Les trois ordres de gouvernement engagent plus de 25 millions de dollars pour agrandir le réseau d'égouts sanitaires et construire de nouvelles infrastructures pluviales sur un tronçon d'Elmwood Drive, à Moncton. La contribution fédérale s'élève à 9,6 millions, celle du Nouveau-Brunswick à près de 8 millions et celle de la Ville à plus de 7,5 millions.\n\nSelon Logement, Infrastructures et Collectivités Canada, les travaux souterrains doivent rendre possible la construction éventuelle de 1 300 logements dans le secteur. La section de rue éventrée par le chantier sera reconstruite et élargie à quatre voies, avec un sentier polyvalent réservé au transport actif.\n\nL'annonce a été faite mardi par la députée de Moncton-Dieppe, Ginette Petitpas Taylor, le ministre néo-brunswickois responsable de la Société de développement régional, Gilles LePage, et le maire de Moncton, Shawn Crossman.\n\nL'argent fédéral vient du Fonds canadien pour l'infrastructure liée au logement, créé dans le budget de 2024 pour financer les réseaux d'eau potable, d'eaux usées et d'eaux pluviales qui conditionnent la densification. Le volet à livraison directe du programme, celui qui finance ce projet, n'accepte plus de nouvelles demandes.\n\nOttawa présente ces investissements comme le prolongement du Fonds pour bâtir des collectivités fortes, doté de 51 milliards sur dix ans à compter de 2026-2027, puis de 3 milliards par année. Il s'agit d'une capacité d'accueil rendue disponible, et non de logements financés : le ministère parle d'un potentiel de développement futur, sans échéancier ni promoteur annoncé.",
+   "photo": "",
+   "legende": "",
+   "horodate": "2026-08-12T05:50-04:00",
+   "permalien": "ottawa-fredericton-et-moncton-mettent-25-millions-dans-les-e-07b905",
+   "_volet": "quebec-canada",
+   "_fichier": "revue-quebec-canada-2026-08-12.json",
+   "_slug": "ottawa-fredericton-et-moncton-mettent-25-millions-dans-les-e-07b905"
+  },
+  {
    "titre": "Les arrivées internationales au Canada progressent de 6,3 % en juillet, portées par les visiteurs américains",
    "cahier": "canada",
    "rubrique": "economie",
@@ -510,13 +527,13 @@
    "rubrique": "societe",
    "territoire": "Québec",
    "medias": "Institut de la statistique du Québec, Les Affaires",
-   "url": "https://www.quebec.ca/nouvelles/actualites/details/ecoute-de-la-musique-sur-les-plateformes-la-croissance-ralentit-au-quebec-72182",
+   "url": "https://statistique.quebec.ca/fr/communique/ecoute-musique-plateformes-croissance-ralentit",
    "resume": "L'Observatoire de la culture et des communications de l'Institut de la statistique du Québec a publié mardi son portrait de la consommation de musique, à partir des données de Luminate Data.\n\nLe Québec a enregistré 31,9 milliards d'écoutes sur les plateformes de diffusion en continu en 2025, une hausse de 3 % seulement, après 12 % en 2024 et 16 % en 2023.\n\nLes artistes du Québec comptent pour 7,1 % de l'ensemble des écoutes, une part stable entre 7 % et 8 % depuis 2022. Parmi les 20 artistes les plus écoutés, un seul nom québécois figure au classement : les Cowboys Fringants, au 12e rang.\n\nLe catalogue ancien gagne du terrain : la moitié des écoutes provient de pistes commercialisées il y a plus de cinq ans, en progression constante depuis 2022, tandis que les nouveautés de 18 mois ou moins n'en représentent que 28 %.\n\nLes ventes de disques compacts, elles, sont passées de près de 13 millions d'unités en 2004 à 0,5 million en 2025. Le disque vinyle progresse à l'inverse depuis 2008 et s'est vendu à 0,4 million d'unités en 2025, une hausse de 311 % depuis 2015.\n\nLa part des interprètes québécois dans les ventes d'albums recule pour une quatrième année, passant de 24 % à 18 % en un an : leurs ventes de disques compacts et de fichiers numériques chutent plus vite que celles des autres provenances, et le vinyle leur profite peu (8 % des ventes). La part du français dans les ventes musicales continue elle aussi de diminuer, surtout sur support physique, où elle est passée de 39 % en 2018 à 11 % en 2025.",
    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/2016-10_Les_Cowboys_fringants_Concert_metropolis_02.jpg/1280px-2016-10_Les_Cowboys_fringants_Concert_metropolis_02.jpg",
    "legende": "Les Cowboys Fringants en concert au Métropolis, à Montréal, en 2016.",
    "photo_auteur": "0x010C",
    "photo_licence": "CC BY-SA 4.0",
-   "horodate": "2026-08-11T16:11-04:00",
+   "horodate": "2026-08-12T05:45-04:00",
    "permalien": "l-ecoute-de-musique-en-continu-ne-croit-plus-que-de-3-au-que-32620a",
    "_volet": "report",
    "_fichier": "revue-report-2026-08-12.json",
@@ -665,22 +682,6 @@
    "_volet": "report",
    "_fichier": "revue-report-2026-08-12.json",
    "_slug": "apres-ceuta-ce-que-les-reseaux-sociaux-font-et-ne-font-pas-a-ebf55a"
-  },
-  {
-   "titre": "Musique en continu au Québec : la croissance des écoutes tombe à 3 %, et la part du français dans les ventes physiques à 11 %",
-   "cahier": "quebec",
-   "rubrique": "societe",
-   "territoire": "Québec",
-   "medias": "Institut de la statistique du Québec",
-   "url": "https://statistique.quebec.ca/fr/communique/ecoute-musique-plateformes-croissance-ralentit",
-   "resume": "Les plateformes de diffusion en continu ont enregistré 31,9 milliards d'écoutes au Québec en 2025, une hausse de 3 % sur un an, contre 12 % en 2024 et 16 % en 2023. L'Observatoire de la culture et des communications de l'Institut de la statistique du Québec a publié mardi cette analyse, fondée sur les données de la firme Luminate Data.\n\nLa part des artistes du Québec dans l'ensemble des écoutes s'établit à 7,1 %, une proportion stable entre 7 % et 8 % depuis 2022 ; parmi les vingt artistes les plus écoutés, un seul vient du Québec — les Cowboys fringants, au douzième rang.\n\nL'écoute en continu favorise nettement le répertoire ancien. La moitié des écoutes de 2025 provient de pistes commercialisées il y a plus de cinq ans, une part qui progresse constamment depuis 2022, tandis que les nouveautés — les chansons mises en marché depuis dix-huit mois ou moins — comptent pour 28 %.\n\nDu côté des supports physiques, les ventes de disques compacts sont passées de près de 13 millions d'unités en 2004 à 0,5 million en 2025, tandis que le vinyle, en progression depuis 2008, atteint 0,4 million d'unités — en hausse de 311 % depuis 2015.\n\nLa part des interprètes du Québec dans les ventes d'albums recule pour une quatrième année consécutive, de 24 % à 18 % en un an. L'Institut l'explique par une chute plus rapide des ventes chez les artistes d'ici que chez les autres, sur les disques compacts comme sur les fichiers numériques, et par le fait que le vinyle leur profite peu — ils comptent pour 8 % de ces ventes. La part du français dans les ventes musicales continue de diminuer, surtout sur les supports physiques, où elle est passée de 39 % en 2018 à 11 % en 2025.",
-   "photo": "",
-   "legende": "",
-   "horodate": "2026-08-11T19:04-04:00",
-   "permalien": "musique-en-continu-au-quebec-la-croissance-des-ecoutes-tombe-2c2d90",
-   "_volet": "report",
-   "_fichier": "revue-report-2026-08-12.json",
-   "_slug": "musique-en-continu-au-quebec-la-croissance-des-ecoutes-tombe-2c2d90"
   },
   {
    "titre": "L'énergie devrait être une question de campagne au Québec, plaide un cabinet-conseil auprès des partis",
