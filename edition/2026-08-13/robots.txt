@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nic0tr3mbl4y-tech.github.io/revue-de-presse/edition/2026-08-13/sitemap.xml
+Sitemap: https://nic0tr3mbl4y-tech.github.io/revue-de-presse/sitemap.xml
